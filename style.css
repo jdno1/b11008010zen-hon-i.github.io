@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text color for readability */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  background: #999999; /* Medium gray */
+  color: white;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+#home .container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-start; /* Align items to the left */
+  padding-top: 20px; /* Move content up slightly */
+}
+
+.profile-photo {
+  width: 150px; /* Adjust size as needed */
+  border-radius: 0; /* Remove circular shape */
+  object-fit: cover;
+  margin-left: -10px; /* Move image slightly to the left */
+  margin-right: 20px; /* Add more margin to the right of the image */
+}
+
+section {
+  padding: 80px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#home {
+  background: #f4f4f4;
+}
+
+.highlight {
+  color: #666666; /* Dark gray for highlights */
+}
+
+.skills {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill {
+  background: #cccccc; /* Light gray */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  background: #b3e5fc; /* Very light ink blue */
+  color: #333; 
+  border: 1px solid #81d4fa; /* Light ink blue border */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.social-links a {
+  color: #0277bd; /* Medium ink blue */
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+}
